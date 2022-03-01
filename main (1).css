@@ -1,0 +1,78 @@
+@media(max-width:768px ) {
+
+    .cartao{
+        margin-top: -40px !important;
+        margin-left: 0 !important;
+    }
+
+    .form-styles{
+        flex-direction: column !important;
+
+    }
+
+    .total{
+        margin-top: 0px !important;
+    }
+
+
+
+}
+@media(max-width: 992px  ) {
+
+    .cartao{
+        margin-top: -430px;
+        margin-left: 33.4%;
+    }
+
+    .btn2{
+        display: block !important;
+    }
+
+    .total{
+        margin-top: -50px;
+    }
+
+   
+      
+}
+
+
+@media (min-width: 992px) and (max-width: 1880px) { 
+    .itens{
+        margin-top: -40%;
+    }
+    .btn1{
+        margin-top: -30%;
+    }
+
+    
+ }
+
+
+
+
+
+input:invalid{
+    border-color: red;
+}
+
+.form-style{
+    flex-direction: row !important;
+    justify-content: space-between !important;
+}
+
+.justify-center{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-style{
+    width: 200px;
+    height: 50px;
+}
+
+.img-style{
+    border: #00000020 solid 1px;
+}
+
+
