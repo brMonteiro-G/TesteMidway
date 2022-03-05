@@ -1,9 +1,6 @@
 @media(max-width:768px ) {
 
-    .cartao{
-        margin-top: -40px !important;
-        margin-left: 0 !important;
-    }
+  
 
     .form-styles{
         flex-direction: column !important;
@@ -25,10 +22,7 @@
 }
 @media(max-width: 992px  ) {
 
-    .cartao{
-        margin-top: -430px;
-        margin-left: 33.4%;
-    }
+   
 
     .btn2{
         display: block !important;
