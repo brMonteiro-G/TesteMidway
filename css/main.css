@@ -7,9 +7,15 @@
 
     .form-styles{
         flex-direction: column !important;
+       
 
     }
 
+    #div{
+        width:100% !important;
+    }
+
+  
     .total{
         margin-top: 0px !important;
     }
@@ -33,6 +39,19 @@
     }
 
    
+
+    #form-nome{
+        flex-direction: column !important;
+       
+    }
+
+    #div{
+        width:60%;
+    }
+
+
+
+   
       
 }
 
@@ -43,6 +62,11 @@
     }
     .btn1{
         margin-top: -30%;
+    }
+
+    .form-styles{
+        flex-direction: row ;
+
     }
 
     

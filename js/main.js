@@ -27,53 +27,54 @@ function msgEmail() {
 
 
 
-const fields = document.querySelectorAll("[required]")
-//console.log(fields)
+
+// const fields = document.querySelectorAll("[required]")
+// //console.log(fields)
 
 
 
 
 
-function customValidation(event) {
-    const field = event.target
+// function customValidation(event) {
+//     const field = event.target
 
-    //eliminar bubble
-    event.preventDefault()
+//     //eliminar bubble
+//     event.preventDefault()
 
-    //lgc para verificar se existem erros
-    function verifyErrors() {
-        let foundError = false;
+//     //lgc para verificar se existem erros
+//     function verifyErrors() {
+//         let foundError = false;
 
-        for (let error in field.validity) {
-            //se n for custom error então verifica se tem erro 
-            if ( field.validity[error]) {
-                foundError = error
-            }
-        }
+//         for (let error in field.validity) {
+//             //se n for custom error então verifica se tem erro 
+//             if ( field.validity[error]) {
+//                 foundError = error
+//             }
+//         }
 
-        return foundError;
-    }
+//         return foundError;
+//     }
 
-    const error = verifyErrors()
-    console.log("Error exists:", error)
+//     const error = verifyErrors()
+//     console.log("Error exists:", error)
 
-    const spanError = field.parentNode.querySelector("#error1")
+//     const spanError = field.parentNode.querySelector("#error-email")
 
-  if(error){
+//   if(error){
     
-    spanError.classList.add("active")
-    spanError.innerHTML = "Campo obrigatório"
+//     spanError.classList.add("active")
+//     spanError.innerHTML = "Campo inválido"
 
-  }else{
-    spanError.classList.remove("active")
-    spanError.innerHTML = ""
-  }
+//   }else{
+//     spanError.classList.remove("active")
+//     spanError.innerHTML = ""
+//   }
 
-}
+// }
 
-for (field of fields) {
-    field.addEventListener("invalid", customValidation)
-}
+// for (field of fields) {
+//     field.addEventListener("invalid", customValidation)
+// }
 
 
 
@@ -85,3 +86,49 @@ for (field of fields) {
     // } else {
     //     field.setCustomValidity("")
     // }
+
+
+    document.querySelector("form")
+    .addEventListener("submit", event => {
+        console.log("enviar formulário")
+    })
+
+    
+ function submit(){
+
+       console.log("está funcionando")
+
+
+       
+       document.getElementById('form-nome').submit();
+       document.getElementById('form-cartao').submit();
+
+       
+     }
+
+
+
+
+
+
+const fields =   document.querySelectorAll("[required]")
+
+console.log(fields)
+
+for(field of fields){
+    field.addEventListener("invalid", event => {
+        console.log("Campo inválido")
+    })
+
+}
+
+
+
+
+
+
+
+    
+
+
+    
