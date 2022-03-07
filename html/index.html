@@ -76,25 +76,26 @@
             <div class=" col-lg-8 col-md-12  ">
               <fieldset>
                 <legend>Dados pessoais</legend>
-                <div class="form-group">
+                <div class="form-group input">
                   <label for="name">Nome completo</label>
                   <input type="text" class="form-control" id="inputName" placeholder="" required maxlength="200">
-                  <span id="error-name"></span>
+                  <span class="error"  id="error-name"></span>
 
                 </div>
-                <div class="form-group">
+                <div class="form-group input">
                   <label for="email">Endereço de email</label>
-                  <input type="email" onblur="validarEmail()" class="form-control" id="inputEmail"
+                  <input type="email"  class="form-control" id="inputEmail"
                     placeholder="email@exemplo.com" required maxlength="300">
-                  <span id="error-email"></span>
+                  <span class="error" id="error-email"></span>
 
 
                 </div>
-                <div class="form-group">
+                <div class="form-group input">
+              
                   <label for="cpf">CPF</label>
                   <input type="text" class="form-control" id="inputCpf" placeholder="000.000.000-00" required
                     maxlength="14" pattern="(\d{3}\.?\d{3}\.?\d{3}-?\d{2})|(\d{2}\.?\d{3}\.?\d{3}/?\d{4}-?\d{2})">
-                  <span class="" id="error-cpf"></span>
+                  <span class="error" id="error-cpf"></span>
 
                 </div>
 
@@ -120,7 +121,7 @@
                   <option value="4">5</option>3
 
                 </select>
-                <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Total:</label>
+                <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Total</label>
                 <input class="form-control" type="text" placeholder="valor" readonly>
               </fieldset>
 
@@ -130,15 +131,14 @@
               <fieldset>
                 <legend>Cartão de crédito</legend>
 
-                <div class="form-group">
+                <div class="form-group input">
                   <label for="ncvv">Número-CVV</label>
-                  <input type="text" class="form-control" id="inputCvv" placeholder="" required minlength="3"
-                    maxlength="3">
-                  <span id="error-cvv"></span>
+                  <input type="text" class="form-control" id="inputCvv"  placeholder="000" required minlength="3" maxlength="3" >
+                  <span class="error"  id="error-cvv"></span>
 
                 </div>
 
-                <div class="form-group">
+                <div class="form-group ">
                   <label for="flags">Bandeira</label>
                   <select name="FlagOptions" class="form-control" required>
                     <option value="null" selected>-</option>
@@ -146,14 +146,14 @@
                     <option value="flag2">Master</option>
                     <option value="flag3">Amex</option>
                   </select>
-                  <span id="error-flag"></span>
+                  <span class="error" id="error-flag"></span>
                 </div>
 
 
-                <div class="form-group">
+                <div class="form-group input">
                   <label for="validity">Validade</label>
                   <input class="form-control" type="date" required>
-                  <span id="error-validade"></span>
+                  <span class="error"  id="error-validade"></span>
                 </div>
 
 
